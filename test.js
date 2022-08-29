@@ -81,16 +81,28 @@
 //     () => alert('Вы не согласны')
 // )
 
-function exponentiateNumber(){
-    let number = 10**10;
-    alert(number);
+// function exponentiateNumber(){
+//     let number = 10**10;
+//     alert(number);
+// }
+
+// let messageShow = (numSum, numSer) =>{
+//     return alert(numSum - numSer);
+// }
+
+// messageShow(100,50);
+
+// exponentiateNumber();
+
+let testFun = prompt('Введите логин','')
+if(testFun === 'Admin'){
+    let passWordText = prompt('Введите пароль', '')
+    if(passWordText === '123456'){
+        alert('Вы успешно вошли')
+    } else{
+        alert('Пароль неверный')
+    }
+} else{
+    alert('Неверный логин или пароль')
 }
-
-let messageShow = (numSum, numSer) =>{
-    return alert(numSum - numSer);
-}
-
-messageShow(100,50);
-
-exponentiateNumber();
 
