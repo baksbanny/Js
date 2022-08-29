@@ -87,7 +87,10 @@ function exponentiateNumber(){
 }
 
 let messageShow = (numSum, numSer) =>{
-    return alert(10-4);
+    return alert(numSum - numSer);
 }
 
+messageShow(100,50);
+
 exponentiateNumber();
+
