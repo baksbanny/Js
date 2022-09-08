@@ -106,8 +106,9 @@ if(testFun === 'Admin'){
     alert('Неверный логин или пароль')
 }
 
-function merHwl(numberOne, numberTwo){
+/*function merHwl(numberOne, numberTwo){
     return numberOne**numberTwo
 }
 
 merHwl(3,4);
+*/
