@@ -112,3 +112,10 @@ if(testFun === 'Admin'){
 
 merHwl(3,4);
 */
+
+let newsGo = new Object();
+let newsApi = {
+    name: "Alex",
+    age: "28"
+};
+
