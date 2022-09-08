@@ -94,7 +94,7 @@
 
 // exponentiateNumber();
 
-let testFun = prompt('Введите логин','')
+/*let testFun = prompt('Введите логин','')
 if(testFun === 'Admin'){
     let passWordText = prompt('Введите пароль', '')
     if(passWordText === '123456'){
@@ -105,7 +105,7 @@ if(testFun === 'Admin'){
 } else{
     alert('Неверный логин или пароль')
 }
-
+*/
 /*function merHwl(numberOne, numberTwo){
     return numberOne**numberTwo
 }
@@ -114,8 +114,20 @@ merHwl(3,4);
 */
 
 let newsGo = new Object();
-let newsApi = {
-    name: "Alex",
-    age: "28"
-};
+// let newsApi = {
+//     name: "Alex",
+//     age: "28"
+// };
 
+// alert(newsApi.name)
+
+
+function nameFamily(name,age){
+    return{
+        name: name,
+        age: age
+    }
+}
+
+let userXml = nameFamily("XML", 35)
+alert(userXml.age);
