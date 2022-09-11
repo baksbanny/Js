@@ -231,7 +231,7 @@ let user = new User("Jack");
 
 alert(user.name);
 alert(user.isAdmin);
-*/
+
 
 function TestFamily(family,age) {
     this.family = family;
@@ -242,3 +242,12 @@ let users = new TestFamily("Frolov", 30);
 
 alert(users.family);
 alert(users.age);
+*/
+
+function SmallUser() {
+    this.name = "Jack";
+    return;
+
+}
+
+alert(new SmallUser().name );
