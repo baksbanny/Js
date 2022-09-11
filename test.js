@@ -1,5 +1,7 @@
 // let userName = prompt('Кто там?', '')
 
+// const { multiply } = require("lodash");
+
 // if(userName === 'Админ')
 // {
 //     let password = prompt('Пароль?', '')
@@ -113,7 +115,7 @@ if(testFun === 'Admin'){
 merHwl(3,4);
 */
 
-let newsGo = new Object();
+// let newsGo = new Object();
 // let newsApi = {
 //     name: "Alex",
 //     age: "28"
@@ -122,12 +124,110 @@ let newsGo = new Object();
 // alert(newsApi.name)
 
 
-function nameFamily(name,age){
-    return{
-        name: name,
-        age: age
+// function nameFamily(name,age){
+//     return{
+//         name: name,
+//         age: age
+//     }
+// }
+
+// let userXml = nameFamily("XML", 35)
+// // alert(userXml.age);
+
+// let users = {
+//     family: "Frolov",
+//     yarh: "2",
+//     weight: "75",
+//     growth: "178"
+// }
+
+// for (let keys in users){
+//     alert(users[keys])
+// }
+
+// for (let keygen in users){
+//     alert(keygen)
+// }
+
+
+// let user = new Object()
+// user.name = "John"
+// user.surname = "Smith"
+// user.name = "Pete"
+// delete user[name]
+
+
+// const userTest = {
+//     name: "Alex"
+// };
+
+// userTest.name = "Ivan";
+
+// alert(userTest.name)
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// }
+
+// let sum = 0;
+// for (let keys in salaries){
+//     sum += salaries[keys]
+// }
+
+// alert(sum)
+
+
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+
+// multiplyNumeric(menu);
+
+// menu = {
+//     width: 400,
+//     height: 600,
+//     title: "My menu"
+// };
+
+// function multiplyNumeric(obj){
+//     for (let keys in obj){
+//         if(typeof obj[keys] == 'number'){
+//             obj[keys] *= 2;
+//         }
+//     }
+// };
+
+/*let calculator = {
+    sum(){
+        return this.a + this.b
+    },
+
+    mul(){
+        return this.a * this.b
+    },
+
+    read(){
+        this.a = +prompt('a', 0);
+        this.b = +prompt('b', 0);
     }
+};
+
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+*/
+
+function User(name) {
+    this.name = name;
+    this.isAdmin = false;
 }
 
-let userXml = nameFamily("XML", 35)
-alert(userXml.age);
+let user = new User("Jack");
+
+alert(user.name);
+alert(user.isAdmin);
