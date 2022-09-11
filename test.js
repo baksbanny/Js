@@ -222,7 +222,7 @@ alert( calculator.sum() );
 alert( calculator.mul() );
 */
 
-function User(name) {
+/*function User(name) {
     this.name = name;
     this.isAdmin = false;
 }
@@ -231,3 +231,14 @@ let user = new User("Jack");
 
 alert(user.name);
 alert(user.isAdmin);
+*/
+
+function TestFamily(family,age) {
+    this.family = family;
+    this.age = age;
+}
+
+let users = new TestFamily("Frolov", 30); 
+
+alert(users.family);
+alert(users.age);
