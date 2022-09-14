@@ -284,8 +284,71 @@ alert(users.age);
 // accumulator.read();
 // accumulator.read?.();
 // alert(accumulator.value);
-
+/*
 let id = Symbol("id");
 alert(id.description);
 
 let numberTest = 1000000000;
+let numberTestName = 1e6;
+alert(numberTestName);
+
+let ms = 1e-6;
+alert(ms);
+alert(0xff);
+
+let num = 255;
+alert(num.toString(8));
+
+let bestNumber = 3.1523;
+alert(Math.floor(bestNumber));
+
+let fixNumber = 3.7;
+alert(fixNumber.toFixed(2));
+
+alert( isNaN(fixNumber));
+*/
+
+// let randomNumber = 4.3;
+
+// alert(Math.random());
+// alert(Math.max(3, 4, 123, 33, 42, 12));
+// alert(Math.min(3, 4, 123, 33, 42, 12));
+// alert(Math.pow(2, 10));
+
+// let numberOne = prompt("Введите число 1");
+// let numberTwo = prompt("Введите число 2");
+// alert(numberOne + numberTwo);
+
+// let numOne = 6.35;
+// alert(1.35.toFixed(1));
+// alert(Math.floor(numOne));
+
+
+/*function readNumber() {
+    let num = parseInt(prompt("Введите число 1"));
+
+    if( num === null || num === undefined ) {
+        return null;
+    }
+
+    return +num;
+}
+
+alert(readNumber());
+*/
+
+
+/*unction randomNumber(numberMin, numberMax) {
+   return numberMin + Math.random() * (numberMax - numberMin);
+}
+
+alert(randomNumber(1, 5));
+*/
+
+function randomFullNumber(numberMin, numberMax) {
+    return numberMin + Math.random() * (numberMax - numberMin);
+}
+
+alert(Math.round(randomFullNumber(1,5)));
+
+
