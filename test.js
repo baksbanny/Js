@@ -244,10 +244,48 @@ alert(users.family);
 alert(users.age);
 */
 
-function SmallUser() {
-    this.name = "Jack";
-    return;
+// function SmallUser() {
+//     this.name = "Jack";
+//     return;
 
-}
+// }
 
-alert(new SmallUser().name );
+// alert(new SmallUser().name );
+
+
+// function Calculator() {
+
+//     this.read = function() {
+//         this.a = +prompt('a', "введите число");
+//         this.b = +prompt('b', "введите число");
+//     }
+//     this.sum = function() {
+//         return this.a + this.b;
+//     }
+//     this.mull = function() {
+//         return this.a * this.b;
+//     };
+// }   
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert("Сумма = " + calculator.sum());
+// alert("Умножение = " + calculator.mull());
+
+// function Accumulator(startingValue){
+//     this.value = startingValue;
+//     this.read = function() {
+//         this.value += +prompt('add', 0);
+//     };
+// }
+
+// let accumulator = new Accumulator(1);
+// accumulator.read();
+// accumulator.read?.();
+// alert(accumulator.value);
+
+let id = Symbol("id");
+alert(id.description);
+
+let numberTest = 1000000000;
