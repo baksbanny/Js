@@ -345,10 +345,48 @@ alert(readNumber());
 alert(randomNumber(1, 5));
 */
 
-function randomFullNumber(numberMin, numberMax) {
-    return numberMin + Math.random() * (numberMax - numberMin);
-}
+// function randomFullNumber(numberMin, numberMax) {
+//     return numberMin + Math.random() * (numberMax - numberMin);
+// }
 
-alert(Math.round(randomFullNumber(1,5)));
+// alert(Math.round(randomFullNumber(1,5)));
 
 
+
+let atrr = new Array();
+let arr = [];
+
+let fruits = ["Orange" , "Apple", "Lime"];
+
+// alert( fruits.length);
+fruits[2] = "Mango";
+// fruits[3] = "Ananas";
+// alert( fruits[0]);
+// alert( fruits[1]);
+// alert( fruits[2]);
+// alert( fruits[3]);
+
+// alert( fruits);
+
+// let test = [ 'Apple', { name: 'Alex'}, true, function() { alert('123');}]
+
+// alert( test[1].name)
+// test[3]();
+
+let testFruits = [ "Яблоко", "Апельсин", "Слива"];
+
+//alert(testFruits)
+
+//alert(testFruits[testFruits.length - 1]);
+//alert(testFruits.at(-2));
+
+// alert(testFruits.pop());
+// alert(testFruits);
+
+// testFruits.push("Банан");
+// alert(testFruits);
+
+// alert( testFruits.shift());
+// alert( testFruits);
+testFruits.unshift('Клубника','Груша');
+alert(testFruits);
