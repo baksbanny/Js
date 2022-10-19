@@ -375,6 +375,15 @@ fruits[2] = "Mango";
 
 let testFruits = [ "Яблоко", "Апельсин", "Слива"];
 
+
+// delete testFruits[2];
+// alert( testFruits[2])
+
+// alert(testFruits.length);
+
+// testFruits.splice(2,2);
+// alert(testFruits);
+
 //alert(testFruits)
 
 //alert(testFruits[testFruits.length - 1]);
@@ -388,5 +397,65 @@ let testFruits = [ "Яблоко", "Апельсин", "Слива"];
 
 // alert( testFruits.shift());
 // alert( testFruits);
-testFruits.unshift('Клубника','Груша');
-alert(testFruits);
+// testFruits.unshift('Клубника','Груша');
+// alert(testFruits);
+
+// for (let i = 0; i < testFruits.length; i++) {
+//     alert(testFruits[i]);
+// }
+// for (let listFruits of testFruits) {
+//     alert(listFruits);
+// }
+
+// for (let nameFruits in testFruits) {
+//     alert(testFruits[nameFruits]);
+// }
+
+// let matrix = [
+//     [1, 2, 3],
+//     [4, 8, 6],
+//     [7, 8, 9]
+//   ];
+  
+//   alert( matrix[1][1] );
+
+//[ "Яблоко", "Апельсин", "Слива"].forEach(alert);
+
+let arg = [1, 2, 3];
+
+// alert( arg.indexOf(3));
+// alert( arg.indexOf(false) );
+// alert( arg.indexOf(null));
+
+// arg.sort();
+// alert(arg);
+
+// arg.reverse();
+// alert(arg);
+// alert( arg.includes(1));
+
+// let names = 'Ivan, Maks, Masha';
+
+// for (let list of names){
+//     alert(list);
+// }
+
+// let str = ["background-color", "list-style-image", "-webkit-transition"] 
+
+// function camelize(str) {
+//     return str
+//     .split('-')
+//     .map(
+//         (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+//     )
+//     .join('');
+// }
+
+
+// alert(camelize)
+
+
+// let arb = [5, 2, 1, -10, 8];
+
+// arb.sort((a, b) => b - a)
+// alert(arb);
