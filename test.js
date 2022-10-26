@@ -459,3 +459,139 @@ let arg = [1, 2, 3];
 
 // arb.sort((a, b) => b - a)
 // alert(arb);
+
+// let map = new Map();
+
+// map.set("1", "str1");
+// map.set(1, "num2");
+// map.set(true, 'bool1');
+
+// alert(map.get(1));
+// alert(map.get("1"));
+// alert(map.size);
+
+
+// let john = { name: "John" };
+// let ben = { name: "Ben" };
+
+// // let visitsCountMap = new Map();
+
+
+// let visitsCountObj = {}
+// visitsCountObj[ben] = 234;
+// visitsCountObj[john] = 123;
+
+// alert(visitsCountObj["[object Object]"]);
+
+
+
+// visitsCountMap.set(john, 123);
+// alert(visitsCountMap.get(john));
+
+
+
+// let hmap = new Map();
+// hmap.set("1", "str1").set(1, "num1").set(true, 'bool1');
+
+// for ( let testOne of hmap.keys() ) {
+//     alert(testOne);
+// }
+
+// for ( let testTwo of hmap.values() ) {
+//     alert(testTwo);
+// }
+
+// for ( let testFree of hmap){
+//     alert(testFree);
+// }
+
+// hmap.forEach((value, key, map) => {
+//     alert('${key}: ${value}');
+// })
+
+// let mapNew = new Map([
+//     ['1', 'str1'],
+//     [1,'num1'],
+//     [true, 'bool1']
+
+// ]);
+
+// alert(mapNew.get('1'));
+
+// let obj = {
+//     name: "John",
+//     age: 30
+// };
+
+// let nMap = new Map(Object.entries(obj));
+// alert(nMap.get('age'));
+
+// let prices = Object.fromEntries([
+//     ['banana', 1],
+//     ['orange', 2],
+//     ['meat', 4]
+// ])
+
+// alert(prices.orange);
+
+// let map = new Map();
+
+// map.set('banana', 1);
+// map.set('orange', 2);
+// map.set('meat', 4);
+
+// let obj = Object.fromEntries(map.entries());
+
+// alert(map.get('banana'));
+
+// let set = new Set();
+
+// let john = { name: "John" };
+// let pete = { name: "Pete" };
+// let mary = { name: "Mary" };
+
+// set.add(john);
+// set.add(pete);
+// set.add(mary);
+// set.add(pete);
+// set.add(mary);
+
+// alert(set.size);
+
+// for ( let userName of set) {
+//     alert(userName.name);
+// }
+
+// let set = new Set(["apple" , "orange" , "banana"]);
+
+// for ( let value of set)
+
+// set.forEach((value, valueAgaing, set) => {
+//         alert(value);
+//     })
+
+// function unique(arr){
+//     return Array.from(new Set(arr));
+// }
+  
+//   let values = ["Hare", "Krishna", "Hare", "Krishna",
+//     "Krishna", "Krishna", "Hare", "Hare", ":-O"
+//   ];
+
+  
+//   alert( unique(values) ); // Hare,Krishna,:-O
+ 
+function aclean(test){
+    let map = new Map();
+
+    for ( let word of test){
+        let sorted = word.toLowerCase().split(" ").sort().join();
+        map.set(sorted, word);
+    }
+
+    return Array.from(map.values()); //
+}
+
+let test = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+alert( aclean(test) ); // "nap,teachers,ear" или "PAN,cheaters,era"
