@@ -546,21 +546,6 @@ let arg = [1, 2, 3];
 
 // let set = new Set();
 
-// let john = { name: "John" };
-// let pete = { name: "Pete" };
-// let mary = { name: "Mary" };
-
-// set.add(john);
-// set.add(pete);
-// set.add(mary);
-// set.add(pete);
-// set.add(mary);
-
-// alert(set.size);
-
-// for ( let userName of set) {
-//     alert(userName.name);
-// }
 
 // let set = new Set(["apple" , "orange" , "banana"]);
 
@@ -581,17 +566,156 @@ let arg = [1, 2, 3];
   
 //   alert( unique(values) ); // Hare,Krishna,:-O
  
-function aclean(test){
-    let map = new Map();
+// function aclean(test){
+//     let map = new Map();
 
-    for ( let word of test){
-        let sorted = word.toLowerCase().split(" ").sort().join();
-        map.set(sorted, word);
-    }
+//     for ( let word of test){
+//         let sorted = word.toLowerCase().split(" ").sort().join();
+//         map.set(sorted, word);
+//     }
 
-    return Array.from(map.values()); //
-}
+//     return Array.from(map.values()); //
+// }
 
-let test = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// let test = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
-alert( aclean(test) ); // "nap,teachers,ear" или "PAN,cheaters,era"
+// alert( aclean(test) ); // "nap,teachers,ear" или "PAN,cheaters,era"
+
+// let john = { name : "John"}
+
+// john = null;
+
+// alert(john)
+// let set = new Set();
+
+// let john = { name: "John" };
+// let pete = { name: "Pete" };
+// let mary = { name: "Mary" };
+
+// set.add(john);
+// set.add(pete);
+// set.add(mary);
+// set.add(pete);
+// set.add(mary);
+
+// alert(set.size);
+
+// for ( let userName of set) {
+//     alert(userName.name);
+// }
+
+
+// let john = { name: "John"};
+// let array = [john];
+// john = null;
+
+// let join = { name: "John" };
+
+// let map = new Map();
+// map.set(join, "...");
+
+// join = null;
+
+// let weakMap = new WeakMap();
+// let obj = {};
+// weakMap.set(obh, "ok");
+
+// weakMap.set("test", "Whoops");
+
+
+// let join = { name: "John" };
+
+// let weakMap = new WeakMap();
+// weakMap.set(join, "...");
+// join = null;
+
+// let visitsCountMap = new Map();
+// function countUser(user) {
+//     let count = visitsCountMap.get(user) || 0;
+//     visitsCountMap.set(user, count + 1);
+// }
+
+// let cache = new Map();
+
+// function process(obj) {
+//     if (!cache.has(obj)) {
+//         let result = obj;
+
+//         cache.set(obj, result);
+//     }
+//     return cache.get(obj);
+// }
+
+// let obj = {};
+
+// let result1 = process(obj);
+
+// let result2 = process(obj);
+
+// obj = null;
+
+// alert(cache.size);
+
+
+// let cache = new WeakMap();
+
+// function process(obj) {
+//     if (!cache.has(obj)) {
+//         let result = obj;
+
+//         cache.set(obj, result)
+//     }
+
+//     return cache.get(obj);
+// }
+
+// let obj = {}
+
+// let result1 = process(obj);
+// let result2 = process(obj);
+
+// obj = null;
+
+// let visitedSet = new WeakSet();
+
+// let john = { name: "John"};
+// let pete = { name: "Pete"};
+// let mary = { name: "Mary"};
+
+// visitedSet.add(john);
+// visitedSet.add(pete);
+// visitedSet.add(john);
+
+
+// alert(visitedSet.has(john));
+
+// alert(visitedSet.has(mary));
+
+// john = null
+
+// let mesagges = [
+//     {text: " Hello", from: "John"},
+//     {text: "Hov hoes?", from: "John"},
+//     {text: "See you soon", from: "Alice"}
+// ]
+
+// let readMessages = new WeakSet();
+
+// readMessages.add(mesagges[0]);
+// readMessages.add(mesagges[1]);
+
+// readMessages.add(mesagges[0]);
+
+// alert("Read message 0: " + readMessages.has(mesagges[0]));
+
+// mesagges.shift();
+
+// let messages = [
+//     {text: "Hello", from: "John"},
+//     {text: "Hello", from: "John"},
+//     {text: "Hov hoes?", from: "Alice"}
+// ]
+
+// let readMap = new WeakMap();
+
+// readMap.set(messages[0], new Date(2017, 1, 1));
