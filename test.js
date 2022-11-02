@@ -719,3 +719,125 @@ let arg = [1, 2, 3];
 // let readMap = new WeakMap();
 
 // readMap.set(messages[0], new Date(2017, 1, 1));
+
+
+// let hmap = new Map();
+// hmap.set("1", "str1").set(1, "num1").set(true, 'bool1');
+
+// for ( let testOne of hmap.keys() ) {
+//     alert(testOne);
+// }
+
+// for ( let testTwo of hmap.values() ) {
+//     alert(testTwo);
+// }
+
+// for ( let testFree of hmap){
+//     alert(testFree);
+// }
+
+// hmap.forEach((value, key, map) => {
+//     alert('${key}: ${value}');
+// })
+
+// let nmap = new Map();
+
+// nmap.set(true, 'str1')
+
+// for ( let name of nmap){
+//     alert(name)
+// }
+
+// let salaries = {
+//     "John": 100,
+//     "Peter": 300,
+//     "Mary": 250
+// };
+
+// function sumSalaries(salaries) {
+
+// }
+
+// alert( sumSalaries(salaries))
+
+// let user = {
+//     name: 'John',
+//     age : 30
+// };
+
+// function count(obj1){
+//     return Object.keys(obj1).length;
+// }
+
+// alert(count(user));
+
+let array = ["Ivan", "Kantor"];
+
+//let [firstName, surname] = array;
+
+//  
+// alert(surname);
+
+// let [firstName, , ,title] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+
+// alert( title ); 
+
+// let user = {
+//     name : "John",
+//     age: 30
+// };
+
+// for (let [key,value] of Object.entries(user)){
+//     alert(`${key}:${value}`);
+// }
+
+// let user = new Map();
+// user.set("name", "John");
+// user.set("age", "30");
+
+// for ( let [key, value] of user){
+//     alert(`${key}: ${value}`);
+// }
+
+// let guest = "Jave";
+// let admin = "Pete";
+
+// [quest, admin] = [admin, guest];
+
+// alert(`${quest} ${admin}`);
+
+// let array2 = ["test1", "test2", "test3", "test4", "test5"];
+
+// [test1, test2, test3, test4, test5] = array2;
+
+// alert(array2)
+
+// let user = { name: "John", years: 30 };
+
+// // [name, age, isAdmin] = user
+// let {name, years: age, isAdmin = false} = user;
+
+
+// alert( name ); // John
+// alert( age ); // 30
+// alert( isAdmin ); // false
+
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+//   };
+
+//   function topSalary(salary) {
+//     let max = 0;
+//     let maxName = null;
+//     for ( const [name, salary] of Object.entries(salaries)){
+//         if ( max < salary){
+//             max = salary;
+//             maxName = name;
+//         }
+//     }
+//     return alert(maxName);
+//   }
+
+//   topSalary()
