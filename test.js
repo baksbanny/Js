@@ -841,3 +841,177 @@ let array = ["Ivan", "Kantor"];
 //   }
 
 //   topSalary()
+
+// let now = new Date();
+// alert(now);
+
+// let jan01_1970 = new Date(0);
+// alert(jan01_1970);
+
+// let date = new Date("2022-01-25");
+// alert(date.getDay());
+
+// let date = new Date();
+// alert(date.getHours());
+// alert(date.getUTCHours());
+
+// let today = new Date();
+
+// today.setHours(0);
+// alert(today);
+
+// today.setHours(0,0,0,0);
+// alert(today);
+
+// let date = new Date(2013, 0, 32);
+// alert(date);
+
+// let date = new Date(2016, 1, 28);
+// date.setDate(date.getDate() + 3);
+// alert(date);
+
+// let date = new Date();
+// date.setSeconds(date.getSeconds() + 70);
+// alert(date);
+
+// let date =  new Date(2016, 0, 2);
+// date.setDate(2);
+// alert(date);
+
+// date.setDate(0);
+// alert(date)
+
+// let start = new Date();
+
+// for (let i = 0; i < 100000; i++){
+//     let doSomething = i * i * i;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл отработал за ${end - start} миллисекунд`);
+
+
+// let start = Date.now();
+
+// for (let i = 0; i < 100000; i++){
+//     let doSomething = i * i * i;
+// }
+
+// let end = Date.now();
+
+// alert(`Цикл отработал за ${end - start} миллисекунд`);
+
+// function diffSubtract(date1, date2) {
+//     return date2 - date1;
+// }
+
+// function difGetTime(date1, date2){
+//     return date2.getTime() - date1.getTime();
+// }
+
+// function bench(f) {
+//     let date1 = new Date(0);
+//     let date2 = new Date();
+
+//     let start = Date.now();
+//     for ( let i = 0; i < 100000; i++) f(date1, date2)
+//     return Date.now() - start;
+// }
+
+// alert( 'Время diffSubtract: ' + bench(diffSubtract) + 'мс');
+// alert( 'Время diffGetTime: ' + bench(difGetTime) + 'мс');
+
+// function diffSubtract(date1, date2) {
+//     return date2 - date1;
+// }
+
+// function diffGetTime(date1, date2){
+//     return date2.getTime() - date1.getTime();
+// }
+
+// function bench(f) {
+//     let date1 = new Date(0);
+//     let date2 = new Date();
+
+//     let start = Date.now();
+//     for ( let i = 0; i < 100000; i++) f(date1, date2)
+//     return Date.now() - start;
+// }
+
+// let time1 = 0;
+// let time2 = 0;
+
+// for ( let i = 0; i < 10 ; i++ ) {
+//     time1 += bench(diffSubtract);
+//     time2 += bench(diffGetTime);
+// }
+
+// alert( ' Итоговое время diffSubtract: ' + time1);
+// alert( ' Итоговое время diffGetTime: ' + time2)
+
+// let ms = new Date(Date.parse("2012-02-25T13:00:00Z"))
+// alert(ms)
+
+// let dat = new Date(2020, 02, 22);
+// alert(dat.getDay());
+
+// let date = new Date(2012, 01, 20,3,12);
+// alert(date)
+
+// let date = new Date(2012, 0, 3);
+
+// function getWeekDat(date){
+//     let datdate = ["ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"];
+//     return datdate[date.getDay()];
+// }
+// alert(getWeekDat(date));
+
+// let date = new Date(2012, 0, 3);
+
+// function getLocalDay(date){
+//     let day = date.getDay();
+
+//     if(day == 0) {
+//         day = 7;
+//     }
+
+//     return day;
+
+// }
+
+// alert(getLocalDay(date))
+
+// let date = new Date(2015, 0, 2);
+
+// function getDateAgo(date, days){
+//     let dateCopy = new Date(date);
+//     dateCopy.setDate(date.getDate() - days);
+//     return dateCopy.getDate();
+// }
+
+// alert( getDateAgo(date, 1) );
+// alert( getDateAgo(date, 2) );
+// alert( getDateAgo(date, 365) );
+
+// function getLastDateOFMonth(yarh, month){
+//     let date = new Date(yarh, month + 1, 0);
+//     return date.getDate();
+// }
+
+// alert( getLastDateOFMonth(2012, 0));
+// alert( getLastDateOFMonth(2012, 1));
+// alert( getLastDateOFMonth(2013, 1));
+
+
+// function getSecondsToday() {
+//     let now = new Date();
+
+//     let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+//     let diff = now - today;
+
+//     return Math.round(diff / 1000);
+// }
+
+// alert( getSecondsToday() );
