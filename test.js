@@ -353,13 +353,13 @@ alert(randomNumber(1, 5));
 
 
 
-let atrr = new Array();
-let arr = [];
+// let atrr = new Array();
+// let arr = [];
 
-let fruits = ["Orange" , "Apple", "Lime"];
+// let fruits = ["Orange" , "Apple", "Lime"];
 
 // alert( fruits.length);
-fruits[2] = "Mango";
+// fruits[2] = "Mango";
 // fruits[3] = "Ananas";
 // alert( fruits[0]);
 // alert( fruits[1]);
@@ -373,7 +373,7 @@ fruits[2] = "Mango";
 // alert( test[1].name)
 // test[3]();
 
-let testFruits = [ "Яблоко", "Апельсин", "Слива"];
+// let testFruits = [ "Яблоко", "Апельсин", "Слива"];
 
 
 // delete testFruits[2];
@@ -421,7 +421,7 @@ let testFruits = [ "Яблоко", "Апельсин", "Слива"];
 
 //[ "Яблоко", "Апельсин", "Слива"].forEach(alert);
 
-let arg = [1, 2, 3];
+// let arg = [1, 2, 3];
 
 // alert( arg.indexOf(3));
 // alert( arg.indexOf(false) );
@@ -771,7 +771,7 @@ let arg = [1, 2, 3];
 
 // alert(count(user));
 
-let array = ["Ivan", "Kantor"];
+// let array = ["Ivan", "Kantor"];
 
 //let [firstName, surname] = array;
 
@@ -1015,3 +1015,54 @@ let array = ["Ivan", "Kantor"];
 // }
 
 // alert( getSecondsToday() );
+
+
+// let user = {
+//     name: 'John',
+//     age: 30,
+
+//     toString() {
+//         return `{name: "${this.name}", age: "${this.age}`;
+//     }
+// };
+
+// alert(user);
+
+// let student = {
+//     name: 'John',
+//     age: 30,
+//     isAsmin: false,
+//     courses: ['html', 'css', 'js'],
+//     wife: null
+// };
+
+// let json = JSON.stringify(student);
+
+// alert(typeof json);
+
+// alert(json);
+
+// let user = {
+//     name: "test",
+//     age: 35
+// };
+
+// let json = JSON.parse(JSON.stringify(user));
+// alert(json);
+
+let room = {
+    number: 23
+};
+
+let meetup = {
+    title: "Совещание",
+    occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+    place: room
+};
+
+room.occupiedBy = meetup;
+meetup.self = meetup;
+
+alert( JSON.stringify(meetup, function replacer(key, value){
+    return (key != "" && value == meetup) ? undefined : value;
+}))
